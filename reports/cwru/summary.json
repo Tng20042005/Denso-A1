@@ -1,0 +1,479 @@
+{
+  "dataset": "CWRU_Bearing_Data_Center",
+  "experiment": "E4_k_sweep",
+  "split_mode": [
+    "random_group"
+  ],
+  "source_type": "public_real",
+  "primary_metric": "pr_auc",
+  "k_values": [
+    0,
+    1,
+    2
+  ],
+  "groups": {
+    "k=0:E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 0.9988397898633214,
+          "ci95": [
+            0.9965193695899647,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean": 0.8327819577181081,
+          "ci95": [
+            0.7945205479452054,
+            0.9081940775230768
+          ]
+        }
+      }
+    },
+    "k=0:E2": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean": 0.6516575245388805,
+          "ci95": [
+            0.4965811965811966,
+            0.8457325643766321
+          ]
+        }
+      }
+    },
+    "k=1:E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 1.0,
+          "ci95": [
+            0.9999999999999998,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean": 0.5957264957264957,
+          "ci95": [
+            0.49572649572649574,
+            0.7940170940170941
+          ]
+        }
+      }
+    },
+    "k=1:E1": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean": 0.5957264957264957,
+          "ci95": [
+            0.49572649572649574,
+            0.7940170940170941
+          ]
+        }
+      }
+    },
+    "k=1:E2": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean": 0.5957264957264957,
+          "ci95": [
+            0.49572649572649574,
+            0.7940170940170941
+          ]
+        }
+      }
+    },
+    "k=2:E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean": 0.5957264957264957,
+          "ci95": [
+            0.49572649572649574,
+            0.7940170940170941
+          ]
+        }
+      }
+    },
+    "k=2:E1": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean": 0.5957264957264957,
+          "ci95": [
+            0.49572649572649574,
+            0.7940170940170941
+          ]
+        }
+      }
+    },
+    "k=2:E2": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "mean": 0.5957264957264957,
+          "ci95": [
+            0.49572649572649574,
+            0.7940170940170941
+          ]
+        }
+      }
+    }
+  },
+  "all_public_real_test_audits_pass": true,
+  "all_leakage_audits_pass": true,
+  "all_budget_audits_pass": true,
+  "all_training_difference_audits_pass": true,
+  "method_coverage": {
+    "0": [
+      "E0",
+      "E2"
+    ],
+    "1": [
+      "E0",
+      "E1",
+      "E2"
+    ],
+    "2": [
+      "E0",
+      "E1",
+      "E2"
+    ]
+  },
+  "paired_deltas": {
+    "k=0:E2-E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": 0.0011602101366784633,
+          "ci95": [
+            0.0,
+            0.0034806304100351904
+          ]
+        },
+        "f1": {
+          "mean_delta": -0.18112443317922766,
+          "ci95": [
+            -0.29849470123442723,
+            -0.06190616327602627
+          ]
+        }
+      }
+    },
+    "k=1:E2-E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": 4.4408920985006264e-17,
+          "ci95": [
+            0.0,
+            1.3322676295501878e-16
+          ]
+        },
+        "f1": {
+          "mean_delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "k=1:E2-E1": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": 2.2204460492503132e-17,
+          "ci95": [
+            0.0,
+            6.661338147750939e-17
+          ]
+        },
+        "f1": {
+          "mean_delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "k=2:E2-E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "f1": {
+          "mean_delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "k=2:E2-E1": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "f1": {
+          "mean_delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "dataset_files": [
+    {
+      "file_id": 97,
+      "path": "data/raw/cwru/97.mat",
+      "sha256": "16bf48babcf1c7ac224bc1a81cd9eafdb27e42d5cf559761907e067e8eeadf3c",
+      "n_raw_samples": 243938,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1796.0,
+      "label_binary": 0,
+      "label_condition": "normal",
+      "group_id": "cwru-file-097"
+    },
+    {
+      "file_id": 98,
+      "path": "data/raw/cwru/98.mat",
+      "sha256": "37e6612c05e65c415dcfa2ab27a3fda648a5863160fa898b884a14743044e045",
+      "n_raw_samples": 483903,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1772.0,
+      "label_binary": 0,
+      "label_condition": "normal",
+      "group_id": "cwru-file-098"
+    },
+    {
+      "file_id": 99,
+      "path": "data/raw/cwru/99.mat",
+      "sha256": "4b97e6b5361f45efb6951dc3b1aebcdb3b89cb69d0f96d6f5c297dd9f45eee75",
+      "n_raw_samples": 485063,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1750.0,
+      "label_binary": 0,
+      "label_condition": "normal",
+      "group_id": "cwru-file-099"
+    },
+    {
+      "file_id": 100,
+      "path": "data/raw/cwru/100.mat",
+      "sha256": "88a5990cb541320e91505a1d72139e1993500ffe6e292a451011667f4138ca78",
+      "n_raw_samples": 485643,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1725.0,
+      "label_binary": 0,
+      "label_condition": "normal",
+      "group_id": "cwru-file-100"
+    },
+    {
+      "file_id": 105,
+      "path": "data/raw/cwru/105.mat",
+      "sha256": "f80b0ea04fd06b372a0eaec7c056543ea37e4bb4727a5b173d2a5bacd2aa9cab",
+      "n_raw_samples": 121265,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1797.0,
+      "label_binary": 1,
+      "label_condition": "inner_007",
+      "group_id": "cwru-file-105"
+    },
+    {
+      "file_id": 106,
+      "path": "data/raw/cwru/106.mat",
+      "sha256": "e5cec7cdd138e6cd1deb9ed8634e5aaa9bc1bd7094ddc075bff606580eb6e883",
+      "n_raw_samples": 121991,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1772.0,
+      "label_binary": 1,
+      "label_condition": "inner_007",
+      "group_id": "cwru-file-106"
+    },
+    {
+      "file_id": 107,
+      "path": "data/raw/cwru/107.mat",
+      "sha256": "111ba8996a115684661a13c913bd74d8029a59294492f88aec7b03e175fdd388",
+      "n_raw_samples": 122136,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1748.0,
+      "label_binary": 1,
+      "label_condition": "inner_007",
+      "group_id": "cwru-file-107"
+    },
+    {
+      "file_id": 108,
+      "path": "data/raw/cwru/108.mat",
+      "sha256": "d415f0e65128bfa0b118c2051c988fb0dc6ce3e4c8aa45fdc5ad1d0967462e7d",
+      "n_raw_samples": 122917,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1721.0,
+      "label_binary": 1,
+      "label_condition": "inner_007",
+      "group_id": "cwru-file-108"
+    },
+    {
+      "file_id": 118,
+      "path": "data/raw/cwru/118.mat",
+      "sha256": "b00628f8dd8d1d930af77fa465d1e5cdb385fe259489053f91f3680bda7f640e",
+      "n_raw_samples": 122571,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1796.0,
+      "label_binary": 1,
+      "label_condition": "ball_007",
+      "group_id": "cwru-file-118"
+    },
+    {
+      "file_id": 119,
+      "path": "data/raw/cwru/119.mat",
+      "sha256": "bc72d9df7668219e004a0f711232b23ec0aed393eb9bd8f9f5483426f6b51330",
+      "n_raw_samples": 121410,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1772.0,
+      "label_binary": 1,
+      "label_condition": "ball_007",
+      "group_id": "cwru-file-119"
+    },
+    {
+      "file_id": 120,
+      "path": "data/raw/cwru/120.mat",
+      "sha256": "e0b7a584c49af52335ff0904a97d4afcf02d045625c582de63a7c85ce10b489c",
+      "n_raw_samples": 121556,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1748.0,
+      "label_binary": 1,
+      "label_condition": "ball_007",
+      "group_id": "cwru-file-120"
+    },
+    {
+      "file_id": 121,
+      "path": "data/raw/cwru/121.mat",
+      "sha256": "52f686e984ba8e9b04a047a57416271cdb322cee57ee105dce58926a24b966cb",
+      "n_raw_samples": 121556,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1722.0,
+      "label_binary": 1,
+      "label_condition": "ball_007",
+      "group_id": "cwru-file-121"
+    },
+    {
+      "file_id": 130,
+      "path": "data/raw/cwru/130.mat",
+      "sha256": "35a095307d0971477049b343a1b5981dde465a58fb7f233ad89b035068c1717d",
+      "n_raw_samples": 121991,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1796.0,
+      "label_binary": 1,
+      "label_condition": "outer_007_6",
+      "group_id": "cwru-file-130"
+    },
+    {
+      "file_id": 131,
+      "path": "data/raw/cwru/131.mat",
+      "sha256": "7883f7b83beadc54b2f301767f9145ce07055707182fb0278fdf0a6bb53ce3cb",
+      "n_raw_samples": 122426,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1773.0,
+      "label_binary": 1,
+      "label_condition": "outer_007_6",
+      "group_id": "cwru-file-131"
+    },
+    {
+      "file_id": 132,
+      "path": "data/raw/cwru/132.mat",
+      "sha256": "17a69ed5d2270b42532e678e35bbe2fa04a2cc413cf2bf9e88c7692de8662d18",
+      "n_raw_samples": 121410,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1750.0,
+      "label_binary": 1,
+      "label_condition": "outer_007_6",
+      "group_id": "cwru-file-132"
+    },
+    {
+      "file_id": 133,
+      "path": "data/raw/cwru/133.mat",
+      "sha256": "53f076cb0d905cf46bffaee7736abce8224ffed777deed03c0c863d762a90c71",
+      "n_raw_samples": 122571,
+      "fs_hz": 12000.0,
+      "channel": "DE",
+      "rpm": 1725.0,
+      "label_binary": 1,
+      "label_condition": "outer_007_6",
+      "group_id": "cwru-file-133"
+    }
+  ]
+}

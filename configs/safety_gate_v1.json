@@ -1,0 +1,58 @@
+{
+  "policy": "SafetyGate-v1",
+  "status": "frozen_for_future_DENSO_validation",
+  "candidate_only": true,
+  "calibration": {
+    "reference": "measured-real train/validation populations only",
+    "minimum_reference_replicates": 5,
+    "fit_before_candidate_utility": true,
+    "final_test_used_for_calibration": false,
+    "quantile_lower": 0.05,
+    "quantile_upper": 0.95,
+    "fixed_margins": {
+      "c2st_auc": 0.05,
+      "spectral_js": 0.05,
+      "spectral_cosine": 0.05,
+      "envelope_cosine": 0.05,
+      "envelope_peak_hz": 15.0,
+      "feature_standardized_gap": 0.5
+    }
+  },
+  "provenance_validity": {
+    "public_real_test_isolation": true,
+    "train_test_parent_group_overlap_allowed": false,
+    "budget_match_required": true,
+    "source_and_parent_traceability_required": true,
+    "unknown_is_pass": false
+  },
+  "fidelity": {
+    "c2st_rule": "candidate_auc <= q95(real_real_auc) + 0.05",
+    "spectral_js_rule": "candidate_js <= q95(real_real_js) + 0.05",
+    "spectral_cosine_rule": "candidate_cosine >= q05(real_real_cosine) - 0.05",
+    "envelope_cosine_rule": "candidate_cosine >= q05(real_real_envelope_cosine) - 0.05",
+    "envelope_peak_rule": "candidate_drift_hz <= q95(real_real_drift_hz) + 15.0",
+    "feature_gap_rule": "candidate_abs_standardized_gap <= q95(real_real_abs_gap) + 0.5",
+    "all_diagnostic_fields_required": true
+  },
+  "novelty": {
+    "exact_signal_hash_overlap_allowed": false,
+    "nearest_neighbor_ratio_floor": 0.25,
+    "near_copy_threshold_must_be_frozen_before_utility": true
+  },
+  "utility": {
+    "paired_seed_minimum": 5,
+    "held_out_population": "measured-real faults only",
+    "pr_auc_delta_vs_real_only_mean_strictly_positive": true,
+    "pr_auc_delta_vs_simple_augmentation_mean_strictly_positive": true,
+    "pr_auc_ci95_lower_bound_strictly_positive_for_both": true,
+    "f1_reported_with_95_ci": true
+  },
+  "decision": "accept only when every required stage is PASS; UNKNOWN is not PASS",
+  "forbidden": [
+    "final-test threshold tuning",
+    "new generator development",
+    "GAN",
+    "diffusion",
+    "post-hoc threshold changes to rescue a candidate"
+  ]
+}

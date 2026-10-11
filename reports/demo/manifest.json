@@ -1,0 +1,36 @@
+[
+  {
+    "sample_id": "sim-normal-000-w000-t0-0000",
+    "source_type": "generated",
+    "fault_origin": "algorithmic_injection",
+    "source_dataset": "denso_a1_simulator",
+    "source_version": "0.1",
+    "raw_record_id": "sim-normal-000",
+    "group_id": "generated-sim-normal-000-0000",
+    "condition_id": "speed-18hz",
+    "parent_ids": [
+      "sim-normal-000-w000"
+    ],
+    "parent_group_ids": [
+      "sim-normal-000"
+    ],
+    "split_role": "train",
+    "fs_hz": 1000.0,
+    "n_channels": 1,
+    "n_samples": 512,
+    "units": "normalized",
+    "label_binary": 1,
+    "label_condition": "mechanism_like_injection",
+    "severity": 1.0,
+    "generator": "t0_physics_injection",
+    "generator_version": "0.1",
+    "config_hash": "5ed3b25fe8e2c99c",
+    "split_seed": 0,
+    "subset_seed": null,
+    "generator_seed": 2057662795,
+    "operating_cond": {
+      "speed_hz": 18.0
+    },
+    "created_at": "2026-10-07T08:25:22.631937+00:00"
+  }
+]

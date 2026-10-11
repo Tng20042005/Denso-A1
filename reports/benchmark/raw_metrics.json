@@ -1,0 +1,1597 @@
+[
+  {
+    "run_id": "E0-k0-seed0",
+    "method": "E0",
+    "k_fault_groups": 0,
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "generator_seed": 20000,
+    "model_seed": 0,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E2-k0-seed0",
+    "method": "E2",
+    "k_fault_groups": 0,
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "generator_seed": 20000,
+    "model_seed": 0,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 0.625,
+      "f1": 0.6666666666666666,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 0.625
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E0-k1-seed0",
+    "method": "E0",
+    "k_fault_groups": 1,
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "generator_seed": 20000,
+    "model_seed": 0,
+    "selected_fault_groups": [
+      "sim-fault-000"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k1-seed0",
+    "method": "E1",
+    "k_fault_groups": 1,
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "generator_seed": 20000,
+    "model_seed": 0,
+    "selected_fault_groups": [
+      "sim-fault-000"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k1-seed0",
+    "method": "E2",
+    "k_fault_groups": 1,
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "generator_seed": 20000,
+    "model_seed": 0,
+    "selected_fault_groups": [
+      "sim-fault-000"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E0-k2-seed0",
+    "method": "E0",
+    "k_fault_groups": 2,
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "generator_seed": 20000,
+    "model_seed": 0,
+    "selected_fault_groups": [
+      "sim-fault-000",
+      "sim-fault-006"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k2-seed0",
+    "method": "E1",
+    "k_fault_groups": 2,
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "generator_seed": 20000,
+    "model_seed": 0,
+    "selected_fault_groups": [
+      "sim-fault-000",
+      "sim-fault-006"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k2-seed0",
+    "method": "E2",
+    "k_fault_groups": 2,
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "generator_seed": 20000,
+    "model_seed": 0,
+    "selected_fault_groups": [
+      "sim-fault-000",
+      "sim-fault-006"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E0-k0-seed1",
+    "method": "E0",
+    "k_fault_groups": 0,
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "generator_seed": 20001,
+    "model_seed": 1,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E2-k0-seed1",
+    "method": "E2",
+    "k_fault_groups": 0,
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "generator_seed": 20001,
+    "model_seed": 1,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 0.75,
+      "f1": 0.6666666666666666,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 0.75
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E0-k1-seed1",
+    "method": "E0",
+    "k_fault_groups": 1,
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "generator_seed": 20001,
+    "model_seed": 1,
+    "selected_fault_groups": [
+      "sim-fault-006"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k1-seed1",
+    "method": "E1",
+    "k_fault_groups": 1,
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "generator_seed": 20001,
+    "model_seed": 1,
+    "selected_fault_groups": [
+      "sim-fault-006"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k1-seed1",
+    "method": "E2",
+    "k_fault_groups": 1,
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "generator_seed": 20001,
+    "model_seed": 1,
+    "selected_fault_groups": [
+      "sim-fault-006"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E0-k2-seed1",
+    "method": "E0",
+    "k_fault_groups": 2,
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "generator_seed": 20001,
+    "model_seed": 1,
+    "selected_fault_groups": [
+      "sim-fault-004",
+      "sim-fault-006"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k2-seed1",
+    "method": "E1",
+    "k_fault_groups": 2,
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "generator_seed": 20001,
+    "model_seed": 1,
+    "selected_fault_groups": [
+      "sim-fault-004",
+      "sim-fault-006"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k2-seed1",
+    "method": "E2",
+    "k_fault_groups": 2,
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "generator_seed": 20001,
+    "model_seed": 1,
+    "selected_fault_groups": [
+      "sim-fault-004",
+      "sim-fault-006"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E0-k0-seed2",
+    "method": "E0",
+    "k_fault_groups": 0,
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "generator_seed": 20002,
+    "model_seed": 2,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 0.8338789682539682,
+      "f1": 0.875,
+      "recall_at_fpr_10": 0.75,
+      "roc_auc": 0.890625
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E2-k0-seed2",
+    "method": "E2",
+    "k_fault_groups": 0,
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "generator_seed": 20002,
+    "model_seed": 2,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 0.5625,
+      "f1": 0.6666666666666666,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 0.5625
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E0-k1-seed2",
+    "method": "E0",
+    "k_fault_groups": 1,
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "generator_seed": 20002,
+    "model_seed": 2,
+    "selected_fault_groups": [
+      "sim-fault-005"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k1-seed2",
+    "method": "E1",
+    "k_fault_groups": 1,
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "generator_seed": 20002,
+    "model_seed": 2,
+    "selected_fault_groups": [
+      "sim-fault-005"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k1-seed2",
+    "method": "E2",
+    "k_fault_groups": 1,
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "generator_seed": 20002,
+    "model_seed": 2,
+    "selected_fault_groups": [
+      "sim-fault-005"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E0-k2-seed2",
+    "method": "E0",
+    "k_fault_groups": 2,
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "generator_seed": 20002,
+    "model_seed": 2,
+    "selected_fault_groups": [
+      "sim-fault-000",
+      "sim-fault-005"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k2-seed2",
+    "method": "E1",
+    "k_fault_groups": 2,
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "generator_seed": 20002,
+    "model_seed": 2,
+    "selected_fault_groups": [
+      "sim-fault-000",
+      "sim-fault-005"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k2-seed2",
+    "method": "E2",
+    "k_fault_groups": 2,
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "generator_seed": 20002,
+    "model_seed": 2,
+    "selected_fault_groups": [
+      "sim-fault-000",
+      "sim-fault-005"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E0-k0-seed3",
+    "method": "E0",
+    "k_fault_groups": 0,
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "generator_seed": 20003,
+    "model_seed": 3,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E2-k0-seed3",
+    "method": "E2",
+    "k_fault_groups": 0,
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "generator_seed": 20003,
+    "model_seed": 3,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 0.6875,
+      "f1": 0.6666666666666666,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 0.6875
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E0-k1-seed3",
+    "method": "E0",
+    "k_fault_groups": 1,
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "generator_seed": 20003,
+    "model_seed": 3,
+    "selected_fault_groups": [
+      "sim-fault-007"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k1-seed3",
+    "method": "E1",
+    "k_fault_groups": 1,
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "generator_seed": 20003,
+    "model_seed": 3,
+    "selected_fault_groups": [
+      "sim-fault-007"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k1-seed3",
+    "method": "E2",
+    "k_fault_groups": 1,
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "generator_seed": 20003,
+    "model_seed": 3,
+    "selected_fault_groups": [
+      "sim-fault-007"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E0-k2-seed3",
+    "method": "E0",
+    "k_fault_groups": 2,
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "generator_seed": 20003,
+    "model_seed": 3,
+    "selected_fault_groups": [
+      "sim-fault-003",
+      "sim-fault-007"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k2-seed3",
+    "method": "E1",
+    "k_fault_groups": 2,
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "generator_seed": 20003,
+    "model_seed": 3,
+    "selected_fault_groups": [
+      "sim-fault-003",
+      "sim-fault-007"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k2-seed3",
+    "method": "E2",
+    "k_fault_groups": 2,
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "generator_seed": 20003,
+    "model_seed": 3,
+    "selected_fault_groups": [
+      "sim-fault-003",
+      "sim-fault-007"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E0-k0-seed4",
+    "method": "E0",
+    "k_fault_groups": 0,
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "generator_seed": 20004,
+    "model_seed": 4,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E2-k0-seed4",
+    "method": "E2",
+    "k_fault_groups": 0,
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "generator_seed": 20004,
+    "model_seed": 4,
+    "selected_fault_groups": [],
+    "train_group_count": 8,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 0.5625,
+      "f1": 0.6666666666666666,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 0.5625
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "pass": true,
+      "note": "k=0 protocol compares one-class to T0 pseudo-fault supervision"
+    }
+  },
+  {
+    "run_id": "E0-k1-seed4",
+    "method": "E0",
+    "k_fault_groups": 1,
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "generator_seed": 20004,
+    "model_seed": 4,
+    "selected_fault_groups": [
+      "sim-fault-005"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k1-seed4",
+    "method": "E1",
+    "k_fault_groups": 1,
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "generator_seed": 20004,
+    "model_seed": 4,
+    "selected_fault_groups": [
+      "sim-fault-005"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k1-seed4",
+    "method": "E2",
+    "k_fault_groups": 1,
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "generator_seed": 20004,
+    "model_seed": 4,
+    "selected_fault_groups": [
+      "sim-fault-005"
+    ],
+    "train_group_count": 9,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 36,
+      "augmented_train_count": 40,
+      "expected_total": 40,
+      "pass": true,
+      "t0_total": 40,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E0-k2-seed4",
+    "method": "E0",
+    "k_fault_groups": 2,
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "generator_seed": 20004,
+    "model_seed": 4,
+    "selected_fault_groups": [
+      "sim-fault-005",
+      "sim-fault-006"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E1-k2-seed4",
+    "method": "E1",
+    "k_fault_groups": 2,
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "generator_seed": 20004,
+    "model_seed": 4,
+    "selected_fault_groups": [
+      "sim-fault-005",
+      "sim-fault-006"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  },
+  {
+    "run_id": "E2-k2-seed4",
+    "method": "E2",
+    "k_fault_groups": 2,
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "generator_seed": 20004,
+    "model_seed": 4,
+    "selected_fault_groups": [
+      "sim-fault-005",
+      "sim-fault-006"
+    ],
+    "train_group_count": 10,
+    "val_group_count": 3,
+    "test_group_count": 4,
+    "source_type": "simulated",
+    "metrics": {
+      "pr_auc": 1.0,
+      "f1": 1.0,
+      "recall_at_fpr_10": 1.0,
+      "roc_auc": 1.0
+    },
+    "leakage_audit": {
+      "group_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      },
+      "group_overlap_pass": true,
+      "duplicate_sample_ids": [],
+      "parent_train_only": true,
+      "pass": true
+    },
+    "budget_audit": {
+      "real_train_count": 40,
+      "augmented_train_count": 48,
+      "expected_total": 48,
+      "pass": true,
+      "t0_total": 48,
+      "budget_match_t0_t1": true
+    }
+  }
+]

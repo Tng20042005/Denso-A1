@@ -1,0 +1,70 @@
+{
+  "protocol": "Paderborn_T0_v2_final_holdout_v1",
+  "dataset": "Paderborn_Bearing_DataCenter",
+  "train_condition": "N15_M07_F10",
+  "test_condition": "N09_M07_F10",
+  "train_healthy_bearings": [
+    "K001",
+    "K002"
+  ],
+  "train_fault_bearings_by_k": {
+    "0": [],
+    "1": [
+      "KA04"
+    ],
+    "2": [
+      "KA04",
+      "KA15"
+    ]
+  },
+  "validation_bearings": [
+    "K004",
+    "KA16",
+    "KI04"
+  ],
+  "test_bearings": [
+    "K003",
+    "KI14",
+    "KI16"
+  ],
+  "measurement_indices": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "window_size": 4096,
+  "step": 4096,
+  "fs_hz": 64000.0,
+  "methods": {
+    "E0": "real_only",
+    "E1": "T1_budget_matched",
+    "E2": "T0_v2"
+  },
+  "seeds": {
+    "split": 0,
+    "reported_model_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "budget": {
+    "generated_per_seed": 32,
+    "match_E1_E2": true
+  },
+  "calibration": {
+    "k0": "fixed physics-only T0V2Config; no real fault information",
+    "k_ge_1": "median envelope fault-frequency and PSD resonance anchors from selected train fault groups only",
+    "forbidden": [
+      "validation faults",
+      "final-test faults",
+      "old Paderborn test metrics"
+    ]
+  },
+  "final_holdout_rule": "test is bearing-disjoint and condition-disjoint from train and validation; test is measured public_real only",
+  "t2": "deferred"
+}

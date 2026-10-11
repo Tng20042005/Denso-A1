@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "DENSO A1 Physics-Informed Anomaly Generation Prototype"
+version: "0.1.0"
+date-released: 2026-10-07
+type: software
+license: MIT
+authors:
+  - family-names: "DENSO A1 prototype contributors"
+    given-names: ""

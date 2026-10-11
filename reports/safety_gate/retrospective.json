@@ -1,0 +1,443 @@
+[
+  {
+    "method": "T0",
+    "family": "physics-informed synthesis",
+    "provenance": {
+      "status": "PASS",
+      "evidence": "public-real/leakage/budget audits and train-parent restriction in reports/paderborn/"
+    },
+    "fidelity": {
+      "status": "FAIL",
+      "c2st_roc_auc_mean": 1.0,
+      "spectral_js_mean": 0.18595946377750283,
+      "psd_cosine_mean": 0.5132549458061313,
+      "evidence": "reports/t0_failure_analysis.md; C2ST=1.0 and PSD/envelope mismatch"
+    },
+    "novelty": {
+      "status": "UNKNOWN",
+      "evidence": "no frozen NN/memorization audit was recorded for the original T0 artifact"
+    },
+    "utility": {
+      "status": "FAIL",
+      "paired_deltas": {
+        "k=0:E2-E0": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.046313042051280354,
+              "ci95": [
+                -0.24532232679474322,
+                0.1399907220462845
+              ]
+            },
+            "f1": {
+              "mean_delta": 0.11666920184774895,
+              "ci95": [
+                -0.01524862502138844,
+                0.3029499762205317
+              ]
+            }
+          }
+        },
+        "k=1:E2-E0": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.05594208707036753,
+              "ci95": [
+                -0.1881514876603186,
+                0.05112910775655555
+              ]
+            },
+            "f1": {
+              "mean_delta": -0.043507293550526405,
+              "ci95": [
+                -0.1687078549236893,
+                0.0816932678226365
+              ]
+            }
+          }
+        },
+        "k=1:E2-E1": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.04907025256092821,
+              "ci95": [
+                -0.18863716874136238,
+                0.057313213528644824
+              ]
+            },
+            "f1": {
+              "mean_delta": -0.04374692122796851,
+              "ci95": [
+                -0.1692529288429844,
+                0.08175908638704736
+              ]
+            }
+          }
+        },
+        "k=2:E2-E0": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.06518008383196357,
+              "ci95": [
+                -0.20456141950975093,
+                0.014785524291551689
+              ]
+            },
+            "f1": {
+              "mean_delta": -0.022187504754208564,
+              "ci95": [
+                -0.10133220829862241,
+                0.028470652174234973
+              ]
+            }
+          }
+        },
+        "k=2:E2-E1": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.07466262337480938,
+              "ci95": [
+                -0.2093715667288009,
+                0.0030401933990806818
+              ]
+            },
+            "f1": {
+              "mean_delta": -0.031510447296647204,
+              "ci95": [
+                -0.10548204963832333,
+                0.010722541056495217
+              ]
+            }
+          }
+        }
+      },
+      "negative_or_zero_comparisons": [
+        "k=0:E2-E0",
+        "k=1:E2-E0",
+        "k=1:E2-E1",
+        "k=2:E2-E0",
+        "k=2:E2-E1"
+      ],
+      "evidence": "held-out measured-real utility; paired seeds and bootstrap CIs"
+    },
+    "observed_outcome_agreement": "AGREES: no positive held-out utility; negative/near-zero paired deltas",
+    "scope_limit": "Paderborn public-real benchmark; not DENSO or naturally occurring field faults",
+    "evidence": [
+      "reports/paderborn/summary.json",
+      "reports/t0_failure_analysis/failure_analysis.json"
+    ],
+    "gate_status": {
+      "provenance": "PASS",
+      "fidelity": "FAIL",
+      "novelty": "UNKNOWN",
+      "utility": "FAIL"
+    },
+    "admission": "REJECT",
+    "admission_reason": "at least one gate is not PASS"
+  },
+  {
+    "method": "T0-v2",
+    "family": "calibrated physics synthesis",
+    "provenance": {
+      "status": "PASS",
+      "evidence": "all public-real, leakage, budget, training-difference and calibration audits pass"
+    },
+    "fidelity": {
+      "status": "FAIL",
+      "evidence": "frozen T0-v2 retained the diagnosed T0 family mismatch; independent T0-v2 fidelity gate was not passed",
+      "diagnostic_reference": "C2ST=1.0, PSD cosine\u22480.50\u20130.57, envelope/fault-frequency mismatch in reports/t0_failure_analysis.md",
+      "reference_present": true
+    },
+    "novelty": {
+      "status": "UNKNOWN",
+      "evidence": "provenance and hashes exist, but no independent frozen NN-distance admission threshold was recorded"
+    },
+    "utility": {
+      "status": "FAIL",
+      "paired_deltas": {
+        "k=0:E2-E0": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.019593405337138714,
+              "ci95": [
+                -0.08377228817899089,
+                0.03979350460577271
+              ]
+            },
+            "f1": {
+              "mean_delta": 0.09690251359016108,
+              "ci95": [
+                -0.11532330562038422,
+                0.3091283328007064
+              ]
+            }
+          }
+        },
+        "k=1:E2-E0": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.15727263887433812,
+              "ci95": [
+                -0.18504199686390527,
+                -0.12082672744159142
+              ]
+            },
+            "f1": {
+              "mean_delta": -0.3398990235410528,
+              "ci95": [
+                -0.3980213576182299,
+                -0.2759633574378408
+              ]
+            }
+          }
+        },
+        "k=1:E2-E1": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.15658583854659375,
+              "ci95": [
+                -0.1840319229143183,
+                -0.12158103255922423
+              ]
+            },
+            "f1": {
+              "mean_delta": -0.3398990235410528,
+              "ci95": [
+                -0.3980213576182299,
+                -0.2759633574378408
+              ]
+            }
+          }
+        },
+        "k=2:E2-E0": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.25169936052636155,
+              "ci95": [
+                -0.29424915960343573,
+                -0.1898311769042746
+              ]
+            },
+            "f1": {
+              "mean_delta": -0.22704747048986781,
+              "ci95": [
+                -0.28296057852809453,
+                -0.17108424599536184
+              ]
+            }
+          }
+        },
+        "k=2:E2-E1": {
+          "n": 5,
+          "metrics": {
+            "pr_auc": {
+              "mean_delta": -0.25169936052636144,
+              "ci95": [
+                -0.29424915960343573,
+                -0.18983117690427462
+              ]
+            },
+            "f1": {
+              "mean_delta": -0.2756847224767737,
+              "ci95": [
+                -0.2988960854523849,
+                -0.24906690899997103
+              ]
+            }
+          }
+        }
+      },
+      "negative_or_zero_comparisons": [
+        "k=0:E2-E0",
+        "k=1:E2-E0",
+        "k=1:E2-E1",
+        "k=2:E2-E0",
+        "k=2:E2-E1"
+      ],
+      "evidence": "held-out measured-real utility; paired seeds and bootstrap CIs"
+    },
+    "observed_outcome_agreement": "AGREES: negative E2 utility on the final frozen Paderborn holdout",
+    "scope_limit": "Paderborn final holdout only; no DENSO transfer claim",
+    "evidence": [
+      "reports/paderborn_v2/summary.json",
+      "reports/paderborn_v2/run_audit.md",
+      "reports/t0_failure_analysis.md"
+    ],
+    "gate_status": {
+      "provenance": "PASS",
+      "fidelity": "FAIL",
+      "novelty": "UNKNOWN",
+      "utility": "FAIL"
+    },
+    "admission": "REJECT",
+    "admission_reason": "at least one gate is not PASS"
+  },
+  {
+    "method": "T2 conditional-VAE",
+    "family": "learned conditional 1D VAE",
+    "provenance": {
+      "status": "PASS",
+      "evidence": "all public-real, leakage, budget, calibration and training-difference audits pass"
+    },
+    "fidelity": {
+      "status": "FAIL",
+      "c2st_roc_auc_max": 1.0,
+      "spectral_js_mean": 0.17395187777594392,
+      "psd_cosine_mean": 0.5573890189217146,
+      "evidence": "reports/t2_benchmark/t2_fidelity_report.md and raw_metrics.json"
+    },
+    "novelty": {
+      "status": "PASS",
+      "median_ratio_min": 0.45201456531027634,
+      "evidence": "all_memorization_audits_pass=true; no exact overlap/NN gate failure in frozen T2 artifact"
+    },
+    "utility": {
+      "status": "FAIL",
+      "paired_deltas": {
+        "k=1:E3-E0": {
+          "n": 5,
+          "mean_delta": -0.02812315773954983,
+          "ci95": [
+            -0.030882228355956998,
+            -0.02542618151653342
+          ]
+        },
+        "k=1:E3-E1": {
+          "n": 5,
+          "mean_delta": -0.030398009785759617,
+          "ci95": [
+            -0.03530081946714654,
+            -0.025495200104372694
+          ]
+        },
+        "k=2:E3-E0": {
+          "n": 5,
+          "mean_delta": -0.10015929812411388,
+          "ci95": [
+            -0.11030501284312014,
+            -0.09001358340510764
+          ]
+        },
+        "k=2:E3-E1": {
+          "n": 5,
+          "mean_delta": -0.08231064730495988,
+          "ci95": [
+            -0.10011712557206691,
+            -0.062010790320526255
+          ]
+        }
+      },
+      "negative_or_zero_comparisons": [
+        "k=1:E3-E0",
+        "k=1:E3-E1",
+        "k=2:E3-E0",
+        "k=2:E3-E1"
+      ],
+      "evidence": "held-out measured-real utility; paired seeds and bootstrap CIs"
+    },
+    "observed_outcome_agreement": "AGREES: C2ST rejection coincided with negative held-out E3 utility",
+    "scope_limit": "Paderborn T2 holdout; learned model is not evidence of DENSO transfer",
+    "evidence": [
+      "reports/t2_benchmark/summary.json",
+      "reports/t2_benchmark/t2_fidelity_report.md",
+      "reports/t2_benchmark/run_audit.md"
+    ],
+    "gate_status": {
+      "provenance": "PASS",
+      "fidelity": "FAIL",
+      "novelty": "PASS",
+      "utility": "FAIL"
+    },
+    "admission": "REJECT",
+    "admission_reason": "at least one gate is not PASS"
+  },
+  {
+    "method": "T3 fault-preserving augmentation",
+    "family": "constrained measured-fault transformations",
+    "provenance": {
+      "status": "PASS",
+      "evidence": "all_provenance_audits_pass=true; parent IDs/groups in raw metrics"
+    },
+    "fidelity": {
+      "status": "FAIL",
+      "c2st_validation_max": 1.0,
+      "spectral_js_mean": 0.09935218151607667,
+      "psd_cosine_mean": 0.7318281364499486,
+      "anchor_drift_mean_hz": 3.61328125,
+      "train_parent_exact_overlap": true,
+      "evidence": "reports/t3_fidelity_report.md and raw_metrics.json"
+    },
+    "novelty": {
+      "status": "FAIL",
+      "median_ratio_min": 1.3041456663700088,
+      "evidence": "train-parent NN ratio=0.000 and exact parent hashes for the selected near-identity policy"
+    },
+    "utility": {
+      "status": "FAIL",
+      "paired_deltas": {
+        "k=1:E4-E0": {
+          "n": 5,
+          "mean_delta": 0.002828773996422296,
+          "ci95": [
+            0.0017783914973446041,
+            0.0041394847057408144
+          ]
+        },
+        "k=1:E4-E1": {
+          "n": 5,
+          "mean_delta": -0.0006856965829338257,
+          "ci95": [
+            -0.0015950042427237676,
+            0.0002486097936907348
+          ]
+        },
+        "k=2:E4-E0": {
+          "n": 5,
+          "mean_delta": -0.00018390936978700533,
+          "ci95": [
+            -0.010459813859630619,
+            0.008037009977138566
+          ]
+        },
+        "k=2:E4-E1": {
+          "n": 5,
+          "mean_delta": -0.0006748586857578065,
+          "ci95": [
+            -0.002235622674845117,
+            0.0007167369649337951
+          ]
+        }
+      },
+      "negative_or_zero_comparisons": [
+        "k=1:E4-E1",
+        "k=2:E4-E0",
+        "k=2:E4-E1"
+      ],
+      "evidence": "held-out measured-real utility; paired seeds and bootstrap CIs"
+    },
+    "observed_outcome_agreement": "AGREES: no improvement over simple augmentation and fidelity/near-copy rejection",
+    "scope_limit": "new Paderborn measured-real holdout; no universal ineffectiveness claim",
+    "evidence": [
+      "reports/t3_benchmark/summary.json",
+      "reports/t3_fidelity_report.md",
+      "reports/t3_benchmark/run_audit.md"
+    ],
+    "gate_status": {
+      "provenance": "PASS",
+      "fidelity": "FAIL",
+      "novelty": "FAIL",
+      "utility": "FAIL"
+    },
+    "admission": "REJECT",
+    "admission_reason": "at least one gate is not PASS"
+  }
+]

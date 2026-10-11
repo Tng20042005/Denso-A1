@@ -1,0 +1,121 @@
+{
+  "protocol": "Paderborn_T3_fault_preserving_augmentation_v1",
+  "dataset": "Paderborn_Bearing_DataCenter",
+  "train_conditions": [
+    "N15_M07_F10",
+    "N15_M07_F04"
+  ],
+  "final_test_condition": "N15_M01_F10",
+  "train_healthy_bearings": [
+    "K002",
+    "K003"
+  ],
+  "train_fault_bearings_by_k": {
+    "0": [],
+    "1": [
+      "KA04"
+    ],
+    "2": [
+      "KA04",
+      "KI04"
+    ]
+  },
+  "validation_bearings": [
+    "K004",
+    "KA16",
+    "KI14"
+  ],
+  "final_test_bearings": [
+    "K001",
+    "KA15",
+    "KI16"
+  ],
+  "measurement_indices": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "window_size": 4096,
+  "step": 4096,
+  "fs_hz": 64000.0,
+  "methods": {
+    "E0": "real_only",
+    "E1": "existing_t1_generic_augmentation",
+    "E2": "frozen_t0_v2",
+    "E3": "frozen_conditional_vae",
+    "E4": "frozen_t3_fault_preserving_augmentation"
+  },
+  "selected_policy": "time_scale",
+  "selected_operators": [
+    "time_scale"
+  ],
+  "development_gate_pass": false,
+  "t3_config": {
+    "amplitude_min": 0.98,
+    "amplitude_max": 1.02,
+    "shift_fraction": 0.005,
+    "noise_fraction_min": 0.02,
+    "noise_fraction_max": 0.06,
+    "noise_max_hz": 16000.0,
+    "phase_std_rad": 0.015,
+    "spectral_fraction": 0.02,
+    "spectral_min_hz": 500.0,
+    "time_scale_fraction": 0.003,
+    "envelope_fraction": 0.02,
+    "envelope_nodes": 32,
+    "version": "t3-fault-preserving-v1"
+  },
+  "vae_config": {
+    "signal_length": 4096,
+    "condition_dim": 3,
+    "hidden_dim": 128,
+    "latent_dim": 16,
+    "batch_size": 64,
+    "epochs": 20,
+    "patience": 5,
+    "learning_rate": 0.001,
+    "beta_kl": 0.001,
+    "spectral_weight": 0.05,
+    "envelope_weight": 0.02,
+    "seed": 0,
+    "device": "cpu"
+  },
+  "seeds": {
+    "paired_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "split_seed": 0
+  },
+  "budget": {
+    "generated_per_seed": 32,
+    "all_generated_arms_equal": true
+  },
+  "selection_criterion": "minimum operator count among policies passing every train/validation fidelity gate; otherwise lowest frozen validation score",
+  "fidelity_gate": {
+    "c2st_roc_auc_max": 0.95,
+    "psd_js_max": 0.25,
+    "psd_cosine_min": 0.65,
+    "anchor_drift_hz_max": 50.0,
+    "nn_ratio_min": 0.25,
+    "exact_hash_overlap_allowed": false
+  },
+  "k0_rule": "no measured fault information; do not fabricate T3 result",
+  "final_holdout_rule": "new measured-real bearing/condition-disjoint holdout; no final-test tuning",
+  "closed_branches": [
+    "T0",
+    "T0-v2",
+    "conditional-VAE-T2"
+  ],
+  "forbidden": [
+    "GAN",
+    "diffusion",
+    "final-test parameter search",
+    "additional raw-data augmentation after E4 failure"
+  ]
+}

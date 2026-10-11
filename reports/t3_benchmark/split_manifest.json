@@ -1,0 +1,362 @@
+[
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 0,
+    "k": 0,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 0,
+    "k": 1,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 0,
+    "k": 2,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 1,
+    "k": 0,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 1,
+    "k": 1,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 1,
+    "k": 2,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 2,
+    "k": 0,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 2,
+    "k": 1,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 2,
+    "k": 2,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 3,
+    "k": 0,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 3,
+    "k": 1,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 3,
+    "k": 2,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 4,
+    "k": 0,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 4,
+    "k": 1,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  },
+  {
+    "freeze_hash": "7fa7e9f66bab0965d7de086570ac18f16ddefd8c09ce53d7e943ea73bb5b2dab",
+    "seed": 4,
+    "k": 2,
+    "train_groups": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ],
+    "val_groups": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "test_groups": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI16"
+    ],
+    "test_condition": "N15_M01_F10",
+    "test_source_types": [
+      "public_real"
+    ]
+  }
+]

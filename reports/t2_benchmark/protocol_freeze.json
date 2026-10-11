@@ -1,0 +1,96 @@
+{
+  "protocol": "Paderborn_T2_conditional_vae_v1",
+  "dataset": "Paderborn_Bearing_DataCenter",
+  "train_conditions": [
+    "N15_M07_F10",
+    "N15_M07_F04"
+  ],
+  "final_test_condition": "N15_M01_F10",
+  "train_healthy_bearings": [
+    "K001",
+    "K002"
+  ],
+  "train_fault_bearings_by_k": {
+    "0": [],
+    "1": [
+      "KA04"
+    ],
+    "2": [
+      "KA04",
+      "KA15"
+    ]
+  },
+  "validation_bearings": [
+    "K003",
+    "KI14",
+    "KI16"
+  ],
+  "final_test_bearings": [
+    "K004",
+    "KA16",
+    "KI04"
+  ],
+  "measurement_indices": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "window_size": 4096,
+  "step": 4096,
+  "fs_hz": 64000.0,
+  "methods": {
+    "E0": "real_only",
+    "E1": "T1_budget_matched_simple_augmentation",
+    "E2": "frozen_T0_v2_negative_baseline",
+    "E3": "T2_conditional_1D_VAE"
+  },
+  "seeds": {
+    "split": 0,
+    "paired_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "budget": {
+    "generated_per_seed": 32,
+    "all_fault_arms_equal": true
+  },
+  "condition_features": [
+    "speed_rpm/2000",
+    "torque_nm/1",
+    "radial_force_n/1000"
+  ],
+  "vae": {
+    "signal_length": 4096,
+    "condition_dim": 3,
+    "hidden_dim": 128,
+    "latent_dim": 16,
+    "batch_size": 64,
+    "epochs": 20,
+    "patience": 5,
+    "learning_rate": 0.001,
+    "beta_kl": 0.001,
+    "spectral_weight": 0.05,
+    "envelope_weight": 0.02,
+    "seed": 0,
+    "device": "cpu"
+  },
+  "fidelity_gate": {
+    "c2st_roc_auc_max": 0.95,
+    "nearest_neighbor_median_ratio_min": 0.25,
+    "exact_hash_overlap_allowed": false,
+    "scope": "train_fault_and_validation_fault_only; final_test_never_used"
+  },
+  "final_holdout_rule": "bearing-disjoint and condition-disjoint new protocol holdout; measured public_real only",
+  "forbidden": [
+    "final-test tuning",
+    "validation/test fault conditioning",
+    "T0-v2 retuning",
+    "diffusion before VAE gate"
+  ]
+}

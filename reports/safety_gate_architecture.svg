@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic Fault Data Safety Gate</title>
+  <desc id="desc">Candidate synthetic fault data passes four sequential gates before admission to detector training.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker>
+    <style>
+      .title{font:700 28px sans-serif;fill:#0f172a}.subtitle{font:16px sans-serif;fill:#475569}.box{stroke:#334155;stroke-width:2;rx:18}.head{font:700 20px sans-serif;fill:#0f172a}.body{font:15px sans-serif;fill:#334155}.small{font:14px sans-serif;fill:#475569}.arrow{stroke:#334155;stroke-width:3;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="620" fill="#f8fafc"/>
+  <text x="60" y="58" class="title">Generator-agnostic Synthetic Fault Data Safety Gate</text>
+  <text x="60" y="88" class="subtitle">A candidate is admitted only when every gate is PASS; UNKNOWN is not PASS.</text>
+  <rect x="60" y="135" width="210" height="105" class="box" fill="#e0f2fe"/>
+  <text x="82" y="170" class="head">Candidate dataset</text>
+  <text x="82" y="198" class="body">T0 / T0-v2 / T2 / T3</text>
+  <text x="82" y="222" class="small">signals + metadata + parents</text>
+  <line x1="270" y1="187" x2="320" y2="187" class="arrow"/>
+  <rect x="320" y="120" width="190" height="135" class="box" fill="#dcfce7"/>
+  <text x="342" y="158" class="head">1. Provenance</text>
+  <text x="342" y="186" class="body">real-only test</text>
+  <text x="342" y="209" class="body">leakage + budget</text>
+  <text x="342" y="232" class="body">parent traceability</text>
+  <line x1="510" y1="187" x2="560" y2="187" class="arrow"/>
+  <rect x="560" y="120" width="190" height="135" class="box" fill="#fef3c7"/>
+  <text x="582" y="158" class="head">2. Fidelity</text>
+  <text x="582" y="186" class="body">PSD / envelope</text>
+  <text x="582" y="209" class="body">RMS / kurtosis</text>
+  <text x="582" y="232" class="body">C2ST separation</text>
+  <line x1="750" y1="187" x2="800" y2="187" class="arrow"/>
+  <rect x="800" y="120" width="150" height="135" class="box" fill="#fce7f3"/>
+  <text x="820" y="158" class="head">3. Novelty</text>
+  <text x="820" y="186" class="body">NN distance</text>
+  <text x="820" y="209" class="body">hash duplicates</text>
+  <text x="820" y="232" class="body">memorization</text>
+  <line x1="950" y1="187" x2="1000" y2="187" class="arrow"/>
+  <rect x="1000" y="120" width="145" height="135" class="box" fill="#ede9fe"/>
+  <text x="1018" y="158" class="head">4. Utility</text>
+  <text x="1018" y="186" class="body">real holdout</text>
+  <text x="1018" y="209" class="body">paired E−E0/E1</text>
+  <text x="1018" y="232" class="body">PR-AUC / F1</text>
+  <path d="M1072 255 V340 H890" class="arrow" fill="none"/>
+  <rect x="690" y="340" width="400" height="105" class="box" fill="#dcfce7"/>
+  <text x="720" y="380" class="head">ACCEPT for detector training</text>
+  <text x="720" y="410" class="body">only if all four gates PASS</text>
+  <path d="M320 255 V500 H500" class="arrow" fill="none"/>
+  <rect x="110" y="500" width="480" height="70" class="box" fill="#fee2e2"/>
+  <text x="140" y="542" class="head">REJECT / do not deploy synthetic faults</text>
+  <text x="760" y="505" class="small">Retrospective result: T0, T0-v2, T2 and T3 rejected</text>
+</svg>

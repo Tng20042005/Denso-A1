@@ -1,0 +1,897 @@
+{
+  "dataset": "Paderborn_Bearing_DataCenter",
+  "experiment": "Paderborn_E4_k_sweep",
+  "split_mode": [
+    "bearing_disjoint"
+  ],
+  "source_type": "public_real",
+  "primary_metric": "pr_auc",
+  "k_values": [
+    0,
+    1,
+    2
+  ],
+  "groups": {
+    "k=0:E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 0.8374608363562416,
+          "ci95": [
+            0.6715977313664717,
+            0.9606089441135064
+          ]
+        },
+        "f1": {
+          "mean": 0.6646749446555964,
+          "ci95": [
+            0.49525256593422895,
+            0.8135302475863362
+          ]
+        }
+      }
+    },
+    "k=0:E2": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 0.7911477943049613,
+          "ci95": [
+            0.6903940048011163,
+            0.9070571635834422
+          ]
+        },
+        "f1": {
+          "mean": 0.7813441465033455,
+          "ci95": [
+            0.6850543332310114,
+            0.848701483700195
+          ]
+        }
+      }
+    },
+    "k=1:E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 0.8306123856782577,
+          "ci95": [
+            0.6479280996370524,
+            0.95851994261456
+          ]
+        },
+        "f1": {
+          "mean": 0.6930487100988654,
+          "ci95": [
+            0.5131118600973267,
+            0.8414954254091581
+          ]
+        }
+      }
+    },
+    "k=1:E1": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 0.8237405511688184,
+          "ci95": [
+            0.6375552994858267,
+            0.9509603793677707
+          ]
+        },
+        "f1": {
+          "mean": 0.6932883377763075,
+          "ci95": [
+            0.5146823176731609,
+            0.8420404993284532
+          ]
+        }
+      }
+    },
+    "k=1:E2": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 0.7746702986078902,
+          "ci95": [
+            0.6318519814566749,
+            0.8966522536497263
+          ]
+        },
+        "f1": {
+          "mean": 0.6495414165483389,
+          "ci95": [
+            0.5470616375344985,
+            0.7548600761715516
+          ]
+        }
+      }
+    },
+    "k=2:E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 0.8371352205039247,
+          "ci95": [
+            0.681438946150693,
+            0.9808581889046373
+          ]
+        },
+        "f1": {
+          "mean": 0.7450747677220577,
+          "ci95": [
+            0.6109340302477345,
+            0.8573526512721003
+          ]
+        }
+      }
+    },
+    "k=2:E1": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 0.8466177600467706,
+          "ci95": [
+            0.6999032642892318,
+            0.9824481487076577
+          ]
+        },
+        "f1": {
+          "mean": 0.7543977102644963,
+          "ci95": [
+            0.6292393319440286,
+            0.8569325798396635
+          ]
+        }
+      }
+    },
+    "k=2:E2": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean": 0.7719551366719611,
+          "ci95": [
+            0.632423197497312,
+            0.9099337325553039
+          ]
+        },
+        "f1": {
+          "mean": 0.7228872629678492,
+          "ci95": [
+            0.6261800120063318,
+            0.8201099307290951
+          ]
+        }
+      }
+    }
+  },
+  "all_public_real_test_audits_pass": true,
+  "all_leakage_audits_pass": true,
+  "all_budget_audits_pass": true,
+  "all_training_difference_audits_pass": true,
+  "method_coverage": {
+    "0": [
+      "E0",
+      "E2"
+    ],
+    "1": [
+      "E0",
+      "E1",
+      "E2"
+    ],
+    "2": [
+      "E0",
+      "E1",
+      "E2"
+    ]
+  },
+  "paired_deltas": {
+    "k=0:E2-E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": -0.046313042051280354,
+          "ci95": [
+            -0.24532232679474322,
+            0.1399907220462845
+          ]
+        },
+        "f1": {
+          "mean_delta": 0.11666920184774895,
+          "ci95": [
+            -0.01524862502138844,
+            0.3029499762205317
+          ]
+        }
+      }
+    },
+    "k=1:E2-E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": -0.05594208707036753,
+          "ci95": [
+            -0.1881514876603186,
+            0.05112910775655555
+          ]
+        },
+        "f1": {
+          "mean_delta": -0.043507293550526405,
+          "ci95": [
+            -0.1687078549236893,
+            0.0816932678226365
+          ]
+        }
+      }
+    },
+    "k=1:E2-E1": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": -0.04907025256092821,
+          "ci95": [
+            -0.18863716874136238,
+            0.057313213528644824
+          ]
+        },
+        "f1": {
+          "mean_delta": -0.04374692122796851,
+          "ci95": [
+            -0.1692529288429844,
+            0.08175908638704736
+          ]
+        }
+      }
+    },
+    "k=2:E2-E0": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": -0.06518008383196357,
+          "ci95": [
+            -0.20456141950975093,
+            0.014785524291551689
+          ]
+        },
+        "f1": {
+          "mean_delta": -0.022187504754208564,
+          "ci95": [
+            -0.10133220829862241,
+            0.028470652174234973
+          ]
+        }
+      }
+    },
+    "k=2:E2-E1": {
+      "n": 5,
+      "metrics": {
+        "pr_auc": {
+          "mean_delta": -0.07466262337480938,
+          "ci95": [
+            -0.2093715667288009,
+            0.0030401933990806818
+          ]
+        },
+        "f1": {
+          "mean_delta": -0.031510447296647204,
+          "ci95": [
+            -0.10548204963832333,
+            0.010722541056495217
+          ]
+        }
+      }
+    }
+  },
+  "condition_id": "N15_M07_F10",
+  "measurement_indices": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "dataset_description": "Official Paderborn vibration_1 recordings at fixed N15_M07_F10 condition; healthy and accelerated-lifetime real-damage bearings; measurements [1, 2, 3, 4, 5].",
+  "license": "CC BY-NC 4.0; citation required; no commercial redistribution",
+  "dataset_files": [
+    {
+      "bearing_id": "K001",
+      "path": "data/raw/paderborn/extracted/K001/N15_M07_F10_K001_1.mat",
+      "sha256": "e1a971e93991e5f8bbfdcacde5a0fec895a4248f8232d52b59ff85d034c9c00d",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K001"
+    },
+    {
+      "bearing_id": "K001",
+      "path": "data/raw/paderborn/extracted/K001/N15_M07_F10_K001_2.mat",
+      "sha256": "9ed50c2cf9b280e65471ee9dde35b280b5deb43a6fc861fabd7935bd772f969a",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K001"
+    },
+    {
+      "bearing_id": "K001",
+      "path": "data/raw/paderborn/extracted/K001/N15_M07_F10_K001_3.mat",
+      "sha256": "721a04849ea72d90bcf623f80b2d6ca8126f3b13910f34319495af0554795549",
+      "n_raw_samples": 256087,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K001"
+    },
+    {
+      "bearing_id": "K001",
+      "path": "data/raw/paderborn/extracted/K001/N15_M07_F10_K001_4.mat",
+      "sha256": "d4ee7fef3b3f2b1f310324034ee22894a84163d7b078c63210f77ffa589f9dc0",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K001"
+    },
+    {
+      "bearing_id": "K001",
+      "path": "data/raw/paderborn/extracted/K001/N15_M07_F10_K001_5.mat",
+      "sha256": "f47c9c9de878ba24479b7f8c1cb48c813354ec71a57112d35b1d87986124fe55",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K001"
+    },
+    {
+      "bearing_id": "K002",
+      "path": "data/raw/paderborn/extracted/K002/N15_M07_F10_K002_1.mat",
+      "sha256": "e2955b32c984c2e2557248ef2c7fbe213c180ade11dcfab8e4456712f785aabb",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K002"
+    },
+    {
+      "bearing_id": "K002",
+      "path": "data/raw/paderborn/extracted/K002/N15_M07_F10_K002_2.mat",
+      "sha256": "c1f4ea201d157be12c0f7f4587281804e0f7af5c9a3ce6b75b6a34f90fbdf62d",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K002"
+    },
+    {
+      "bearing_id": "K002",
+      "path": "data/raw/paderborn/extracted/K002/N15_M07_F10_K002_3.mat",
+      "sha256": "2f854f3e6e9d0d86ce706f115ef81a452fff8dc9d22c909924b591244a4f5a66",
+      "n_raw_samples": 256135,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K002"
+    },
+    {
+      "bearing_id": "K002",
+      "path": "data/raw/paderborn/extracted/K002/N15_M07_F10_K002_4.mat",
+      "sha256": "e66091caf2624fc91995d679e717d6dea2332e63b544fc58e4ed2643fb870f43",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K002"
+    },
+    {
+      "bearing_id": "K002",
+      "path": "data/raw/paderborn/extracted/K002/N15_M07_F10_K002_5.mat",
+      "sha256": "5a54462656ed06d73f84d2c5718e239ba51839966961b6f4fa8c5e165f015a84",
+      "n_raw_samples": 256002,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K002"
+    },
+    {
+      "bearing_id": "K003",
+      "path": "data/raw/paderborn/extracted/K003/N15_M07_F10_K003_1.mat",
+      "sha256": "c0f0fab2248bf96db5bb0301e7ad157efbcde9ec6af43a4f9cf50100e3bc038e",
+      "n_raw_samples": 256000,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K003"
+    },
+    {
+      "bearing_id": "K003",
+      "path": "data/raw/paderborn/extracted/K003/N15_M07_F10_K003_2.mat",
+      "sha256": "abfd86590e14aa2e3c175f71edc85f1b7c4b70b52fbee9d552d88ad0c144fba1",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K003"
+    },
+    {
+      "bearing_id": "K003",
+      "path": "data/raw/paderborn/extracted/K003/N15_M07_F10_K003_3.mat",
+      "sha256": "9bcc2d54924786d1a975e180d3a6572eba8fc4a6200be03415ed294ffff470c3",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K003"
+    },
+    {
+      "bearing_id": "K003",
+      "path": "data/raw/paderborn/extracted/K003/N15_M07_F10_K003_4.mat",
+      "sha256": "d16f1083654d9491f19d8b0c43edf0691e6542b30bb82e38e8411e44d756956a",
+      "n_raw_samples": 256095,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K003"
+    },
+    {
+      "bearing_id": "K003",
+      "path": "data/raw/paderborn/extracted/K003/N15_M07_F10_K003_5.mat",
+      "sha256": "1ab9149f4d784e0c44d5dd23dc3e8b0fb2baf450a314f26c3f26c8577102ea3e",
+      "n_raw_samples": 256112,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K003"
+    },
+    {
+      "bearing_id": "K004",
+      "path": "data/raw/paderborn/extracted/K004/N15_M07_F10_K004_1.mat",
+      "sha256": "4fbe5c88b56c0a2e1a4b20ca25894024717117b6420e4d9a0e2903f1efc01368",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K004"
+    },
+    {
+      "bearing_id": "K004",
+      "path": "data/raw/paderborn/extracted/K004/N15_M07_F10_K004_2.mat",
+      "sha256": "065d14326f781471978b8b4b08cd4e66c6e34cd436e6c98584377c1aa1e8733c",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K004"
+    },
+    {
+      "bearing_id": "K004",
+      "path": "data/raw/paderborn/extracted/K004/N15_M07_F10_K004_3.mat",
+      "sha256": "99bc000a2eb49a3b84fdf5b97b2da6b422fbfaae7c988825b879330f709d684d",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K004"
+    },
+    {
+      "bearing_id": "K004",
+      "path": "data/raw/paderborn/extracted/K004/N15_M07_F10_K004_4.mat",
+      "sha256": "2e8c50a06a4bb31d1813de48fccae780fb171c9dab16d6b47e9474ae805fcf00",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K004"
+    },
+    {
+      "bearing_id": "K004",
+      "path": "data/raw/paderborn/extracted/K004/N15_M07_F10_K004_5.mat",
+      "sha256": "33e77454793f8ee4e7c1c95b5b161f1e70d28e06da16e866377ce0c8a61d6716",
+      "n_raw_samples": 256000,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 0,
+      "label_condition": "healthy",
+      "group_id": "paderborn-bearing-K004"
+    },
+    {
+      "bearing_id": "KA04",
+      "path": "data/raw/paderborn/extracted/KA04/N15_M07_F10_KA04_1.mat",
+      "sha256": "c1caff884401a8476d3e8f42fb6efcd57c721888706af26cfeaeb2c3e99b35a5",
+      "n_raw_samples": 256004,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA04"
+    },
+    {
+      "bearing_id": "KA04",
+      "path": "data/raw/paderborn/extracted/KA04/N15_M07_F10_KA04_2.mat",
+      "sha256": "22210c904d75338060e03859cab6c6c55c1f509ff250e266f178eb198b210017",
+      "n_raw_samples": 262062,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA04"
+    },
+    {
+      "bearing_id": "KA04",
+      "path": "data/raw/paderborn/extracted/KA04/N15_M07_F10_KA04_3.mat",
+      "sha256": "6ae0d36410a6dd32ac307ab8ffae4d81b867b433b01ab24dcc1a12172dff2f31",
+      "n_raw_samples": 257144,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA04"
+    },
+    {
+      "bearing_id": "KA04",
+      "path": "data/raw/paderborn/extracted/KA04/N15_M07_F10_KA04_4.mat",
+      "sha256": "700369d50867284ed9969d730354d4fe9e60b29d7e90e568359fcbee26615e07",
+      "n_raw_samples": 256088,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA04"
+    },
+    {
+      "bearing_id": "KA04",
+      "path": "data/raw/paderborn/extracted/KA04/N15_M07_F10_KA04_5.mat",
+      "sha256": "c6dc56d18a2704193756e502b656ca21781b6ec983e4b36c5a2ef7c939d1cbfa",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA04"
+    },
+    {
+      "bearing_id": "KA15",
+      "path": "data/raw/paderborn/extracted/KA15/N15_M07_F10_KA15_1.mat",
+      "sha256": "48263d4e1244455b21cbbe8a4bba8fc0dbbe1c379d984ffd5d463339d676af6a",
+      "n_raw_samples": 256000,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA15"
+    },
+    {
+      "bearing_id": "KA15",
+      "path": "data/raw/paderborn/extracted/KA15/N15_M07_F10_KA15_2.mat",
+      "sha256": "088552bc2d26987e20ea30f693fe7ac9ecfd71df23998ee0bdec3716fcbd649d",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA15"
+    },
+    {
+      "bearing_id": "KA15",
+      "path": "data/raw/paderborn/extracted/KA15/N15_M07_F10_KA15_3.mat",
+      "sha256": "33fa5141f10f736e4b62f57fcf9a3744a5442b8a212141d1d300d015c0a8f2fe",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA15"
+    },
+    {
+      "bearing_id": "KA15",
+      "path": "data/raw/paderborn/extracted/KA15/N15_M07_F10_KA15_4.mat",
+      "sha256": "53e7f1f9a288036f29ac2c77ce0bb0372421cd9f48103ad7d82d751c2dc30c4d",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA15"
+    },
+    {
+      "bearing_id": "KA15",
+      "path": "data/raw/paderborn/extracted/KA15/N15_M07_F10_KA15_5.mat",
+      "sha256": "8e54f2e87222172d54ae5d112d364309da0973e6191c4fc1e1b669c6fc9fe700",
+      "n_raw_samples": 256002,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA15"
+    },
+    {
+      "bearing_id": "KA16",
+      "path": "data/raw/paderborn/extracted/KA16/N15_M07_F10_KA16_1.mat",
+      "sha256": "152a6de0d94e766f0cb0030718c26d6c4d32314e9b15a94654e2dbe7330c9cc8",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA16"
+    },
+    {
+      "bearing_id": "KA16",
+      "path": "data/raw/paderborn/extracted/KA16/N15_M07_F10_KA16_2.mat",
+      "sha256": "b66c047286be8667eecb62df0bc25e17fe3f2c0e4f4fa55fe14d32f619a70370",
+      "n_raw_samples": 256091,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA16"
+    },
+    {
+      "bearing_id": "KA16",
+      "path": "data/raw/paderborn/extracted/KA16/N15_M07_F10_KA16_3.mat",
+      "sha256": "0a6844629372e2b7754353179664d8ad55a90bb439be03d81460142ec34505c0",
+      "n_raw_samples": 256088,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA16"
+    },
+    {
+      "bearing_id": "KA16",
+      "path": "data/raw/paderborn/extracted/KA16/N15_M07_F10_KA16_4.mat",
+      "sha256": "2abe513439fb5e6830a7032baaf25c474f53efcf6b47b0eb4340d9b65feab1b1",
+      "n_raw_samples": 256077,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA16"
+    },
+    {
+      "bearing_id": "KA16",
+      "path": "data/raw/paderborn/extracted/KA16/N15_M07_F10_KA16_5.mat",
+      "sha256": "312c40cd7f9bf968077506db7aaa90325c9c8e48de25ac22eb2ffa6139201fc8",
+      "n_raw_samples": 256003,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KA16"
+    },
+    {
+      "bearing_id": "KI04",
+      "path": "data/raw/paderborn/extracted/KI04/N15_M07_F10_KI04_1.mat",
+      "sha256": "d77409dca95d03986b5957b73c2219f42f7bbfd8080ebbf6f5b9f11571476f9c",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI04"
+    },
+    {
+      "bearing_id": "KI04",
+      "path": "data/raw/paderborn/extracted/KI04/N15_M07_F10_KI04_2.mat",
+      "sha256": "21e8db6824fb887c13ac5fefcd678d81b70c51734d6fc9a24fb580a9acf3d2dc",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI04"
+    },
+    {
+      "bearing_id": "KI04",
+      "path": "data/raw/paderborn/extracted/KI04/N15_M07_F10_KI04_3.mat",
+      "sha256": "160e9630ad5c2d9c8378eed1ee5d596177d85d31aad1bbb3f396b8305aadb5bd",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI04"
+    },
+    {
+      "bearing_id": "KI04",
+      "path": "data/raw/paderborn/extracted/KI04/N15_M07_F10_KI04_4.mat",
+      "sha256": "6c8cf4dc8f8df64561c9ad653f6d2bf0c48fd9d1a534276a22ebc13fa2d5b27d",
+      "n_raw_samples": 256813,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI04"
+    },
+    {
+      "bearing_id": "KI04",
+      "path": "data/raw/paderborn/extracted/KI04/N15_M07_F10_KI04_5.mat",
+      "sha256": "65844dfbaf87208e490960fb0f7ae9c8f69dc6d85a171becf76abfa5629213bb",
+      "n_raw_samples": 256089,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI04"
+    },
+    {
+      "bearing_id": "KI14",
+      "path": "data/raw/paderborn/extracted/KI14/N15_M07_F10_KI14_1.mat",
+      "sha256": "0561c09a89dff7fe5f78eeaa09b8c1d8f85174862418d970b5091d0b54b63fc3",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI14"
+    },
+    {
+      "bearing_id": "KI14",
+      "path": "data/raw/paderborn/extracted/KI14/N15_M07_F10_KI14_2.mat",
+      "sha256": "33fb8ee231dac36ef2d03d69309f4eec88cffb2256eda96597028a521aac9878",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI14"
+    },
+    {
+      "bearing_id": "KI14",
+      "path": "data/raw/paderborn/extracted/KI14/N15_M07_F10_KI14_3.mat",
+      "sha256": "2f8905cbf37b74c8f11af54978b5b7fe249b6652833e02aefdc60df95a968695",
+      "n_raw_samples": 256005,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI14"
+    },
+    {
+      "bearing_id": "KI14",
+      "path": "data/raw/paderborn/extracted/KI14/N15_M07_F10_KI14_4.mat",
+      "sha256": "90918df547d1fd4e2db1aff2df6d4ec8c4c16d95e2c59f383abf0e505d1d7e30",
+      "n_raw_samples": 256388,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI14"
+    },
+    {
+      "bearing_id": "KI14",
+      "path": "data/raw/paderborn/extracted/KI14/N15_M07_F10_KI14_5.mat",
+      "sha256": "5d7ea53cbf5796f50a7d205182fda7b2394bf9fb9428af486237c9e056f1e606",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI14"
+    },
+    {
+      "bearing_id": "KI16",
+      "path": "data/raw/paderborn/extracted/KI16/N15_M07_F10_KI16_1.mat",
+      "sha256": "a73d2cd371a689c46a3cc95af9d8851f39f662b00a2eb826002c1bbdc901d220",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI16"
+    },
+    {
+      "bearing_id": "KI16",
+      "path": "data/raw/paderborn/extracted/KI16/N15_M07_F10_KI16_2.mat",
+      "sha256": "d361f1f6e02eb160b9b81ba73a661207d87c3467807620c39d6e4c9a14be8f51",
+      "n_raw_samples": 256000,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI16"
+    },
+    {
+      "bearing_id": "KI16",
+      "path": "data/raw/paderborn/extracted/KI16/N15_M07_F10_KI16_3.mat",
+      "sha256": "5d30914fcc08bd43def2b700d59cc9a60651ee3207501192c677d47edbab3a48",
+      "n_raw_samples": 256002,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI16"
+    },
+    {
+      "bearing_id": "KI16",
+      "path": "data/raw/paderborn/extracted/KI16/N15_M07_F10_KI16_4.mat",
+      "sha256": "4b4bd5f09559a59266a63ac19fdb4d2179ab97c42b03a6c5cb62e5ee5f3a4e65",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI16"
+    },
+    {
+      "bearing_id": "KI16",
+      "path": "data/raw/paderborn/extracted/KI16/N15_M07_F10_KI16_5.mat",
+      "sha256": "1c140262f5480764cec250c8d583b0b12e704e2f03ef7d38634cd6eaf9af49ea",
+      "n_raw_samples": 256001,
+      "fs_hz": 64000.0,
+      "channel": "vibration_1",
+      "condition_id": "N15_M07_F10",
+      "label_binary": 1,
+      "label_condition": "real_accelerated_damage",
+      "group_id": "paderborn-bearing-KI16"
+    }
+  ]
+}

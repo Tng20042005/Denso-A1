@@ -1,0 +1,32 @@
+{
+  "dataset": "Paderborn_Bearing_DataCenter",
+  "condition": "N15_M07_F10",
+  "reference_train_groups": [
+    "paderborn-bearing-KA04",
+    "paderborn-bearing-KA15"
+  ],
+  "reference_validation_groups": [
+    "paderborn-bearing-KA16",
+    "paderborn-bearing-KI04"
+  ],
+  "sample_count_per_population": 128,
+  "measurement_indices": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "window_size": 4096,
+  "final_test_used": false,
+  "corruption_levels": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "corruption_only_diagnostic": true,
+  "matched_real_reference": "two deterministic halves of the sampled measured-real train-fault population",
+  "protocol_sha256": "1d07f943790646b312be2f427a5cec24c07b25f0b5e6dd7c4dea65f6998fb5d5"
+}

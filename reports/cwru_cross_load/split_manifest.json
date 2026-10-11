@@ -1,0 +1,527 @@
+[
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "cwru-file-099",
+      "cwru-file-100"
+    ],
+    "val_group_ids": [
+      "cwru-file-098",
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ],
+    "test_group_ids": [
+      "cwru-file-097",
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ],
+    "heldout_load_hp": 0,
+    "val_load_hp": 1,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "cwru-file-099",
+      "cwru-file-100",
+      "cwru-file-120"
+    ],
+    "val_group_ids": [
+      "cwru-file-098",
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ],
+    "test_group_ids": [
+      "cwru-file-097",
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ],
+    "heldout_load_hp": 0,
+    "val_load_hp": 1,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "cwru-file-099",
+      "cwru-file-100",
+      "cwru-file-120",
+      "cwru-file-121"
+    ],
+    "val_group_ids": [
+      "cwru-file-098",
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ],
+    "test_group_ids": [
+      "cwru-file-097",
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ],
+    "heldout_load_hp": 0,
+    "val_load_hp": 1,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "cwru-file-097",
+      "cwru-file-100"
+    ],
+    "val_group_ids": [
+      "cwru-file-099",
+      "cwru-file-107",
+      "cwru-file-120",
+      "cwru-file-132"
+    ],
+    "test_group_ids": [
+      "cwru-file-098",
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ],
+    "heldout_load_hp": 1,
+    "val_load_hp": 2,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "cwru-file-097",
+      "cwru-file-100",
+      "cwru-file-105"
+    ],
+    "val_group_ids": [
+      "cwru-file-099",
+      "cwru-file-107",
+      "cwru-file-120",
+      "cwru-file-132"
+    ],
+    "test_group_ids": [
+      "cwru-file-098",
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ],
+    "heldout_load_hp": 1,
+    "val_load_hp": 2,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "cwru-file-097",
+      "cwru-file-100",
+      "cwru-file-105",
+      "cwru-file-133"
+    ],
+    "val_group_ids": [
+      "cwru-file-099",
+      "cwru-file-107",
+      "cwru-file-120",
+      "cwru-file-132"
+    ],
+    "test_group_ids": [
+      "cwru-file-098",
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ],
+    "heldout_load_hp": 1,
+    "val_load_hp": 2,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "cwru-file-097",
+      "cwru-file-098"
+    ],
+    "val_group_ids": [
+      "cwru-file-100",
+      "cwru-file-108",
+      "cwru-file-121",
+      "cwru-file-133"
+    ],
+    "test_group_ids": [
+      "cwru-file-099",
+      "cwru-file-107",
+      "cwru-file-120",
+      "cwru-file-132"
+    ],
+    "heldout_load_hp": 2,
+    "val_load_hp": 3,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-107",
+      "cwru-file-120",
+      "cwru-file-132"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "cwru-file-097",
+      "cwru-file-098",
+      "cwru-file-118"
+    ],
+    "val_group_ids": [
+      "cwru-file-100",
+      "cwru-file-108",
+      "cwru-file-121",
+      "cwru-file-133"
+    ],
+    "test_group_ids": [
+      "cwru-file-099",
+      "cwru-file-107",
+      "cwru-file-120",
+      "cwru-file-132"
+    ],
+    "heldout_load_hp": 2,
+    "val_load_hp": 3,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-107",
+      "cwru-file-120",
+      "cwru-file-132"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "cwru-file-097",
+      "cwru-file-098",
+      "cwru-file-118",
+      "cwru-file-131"
+    ],
+    "val_group_ids": [
+      "cwru-file-100",
+      "cwru-file-108",
+      "cwru-file-121",
+      "cwru-file-133"
+    ],
+    "test_group_ids": [
+      "cwru-file-099",
+      "cwru-file-107",
+      "cwru-file-120",
+      "cwru-file-132"
+    ],
+    "heldout_load_hp": 2,
+    "val_load_hp": 3,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-107",
+      "cwru-file-120",
+      "cwru-file-132"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "cwru-file-098",
+      "cwru-file-099"
+    ],
+    "val_group_ids": [
+      "cwru-file-097",
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ],
+    "test_group_ids": [
+      "cwru-file-100",
+      "cwru-file-108",
+      "cwru-file-121",
+      "cwru-file-133"
+    ],
+    "heldout_load_hp": 3,
+    "val_load_hp": 0,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-108",
+      "cwru-file-121",
+      "cwru-file-133"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "cwru-file-098",
+      "cwru-file-099",
+      "cwru-file-107"
+    ],
+    "val_group_ids": [
+      "cwru-file-097",
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ],
+    "test_group_ids": [
+      "cwru-file-100",
+      "cwru-file-108",
+      "cwru-file-121",
+      "cwru-file-133"
+    ],
+    "heldout_load_hp": 3,
+    "val_load_hp": 0,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-108",
+      "cwru-file-121",
+      "cwru-file-133"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "cwru-file-098",
+      "cwru-file-099",
+      "cwru-file-106",
+      "cwru-file-107"
+    ],
+    "val_group_ids": [
+      "cwru-file-097",
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ],
+    "test_group_ids": [
+      "cwru-file-100",
+      "cwru-file-108",
+      "cwru-file-121",
+      "cwru-file-133"
+    ],
+    "heldout_load_hp": 3,
+    "val_load_hp": 0,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-108",
+      "cwru-file-121",
+      "cwru-file-133"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "cwru-file-099",
+      "cwru-file-100"
+    ],
+    "val_group_ids": [
+      "cwru-file-098",
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ],
+    "test_group_ids": [
+      "cwru-file-097",
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ],
+    "heldout_load_hp": 0,
+    "val_load_hp": 1,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "cwru-file-099",
+      "cwru-file-100",
+      "cwru-file-108"
+    ],
+    "val_group_ids": [
+      "cwru-file-098",
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ],
+    "test_group_ids": [
+      "cwru-file-097",
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ],
+    "heldout_load_hp": 0,
+    "val_load_hp": 1,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ]
+  },
+  {
+    "dataset": "CWRU_Bearing_Data_Center",
+    "experiment": "E4_k_sweep",
+    "split_mode": "cross_load",
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "cwru-file-099",
+      "cwru-file-100",
+      "cwru-file-108",
+      "cwru-file-133"
+    ],
+    "val_group_ids": [
+      "cwru-file-098",
+      "cwru-file-106",
+      "cwru-file-119",
+      "cwru-file-131"
+    ],
+    "test_group_ids": [
+      "cwru-file-097",
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ],
+    "heldout_load_hp": 0,
+    "val_load_hp": 1,
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "cwru-file-105",
+      "cwru-file-118",
+      "cwru-file-130"
+    ]
+  }
+]

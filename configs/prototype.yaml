@@ -1,0 +1,10 @@
+source_type: simulated
+fs_hz: 1000
+signal_length: 512
+normal_groups: 12
+fault_groups: 8
+windows_per_group: 4
+k_values: [0, 1, 2]
+paired_seeds: 5
+primary_metric: pr_auc
+fixed_fpr: 0.10

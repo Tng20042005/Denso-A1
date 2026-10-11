@@ -1,0 +1,557 @@
+[
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K004"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA16"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA15"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA16"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 0,
+    "subset_seed": 10000,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA15"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA16"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-K004"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-KA15"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-KA15"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 1,
+    "subset_seed": 10001,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI16"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-KA15"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KI04"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-K002"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KI14"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA16"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA16"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-K002",
+      "paderborn-bearing-KA15"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KI14"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA16"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA16"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 2,
+    "subset_seed": 10002,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-K002",
+      "paderborn-bearing-KA15",
+      "paderborn-bearing-KI04"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KI14"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA16"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA16"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-K002"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-K002",
+      "paderborn-bearing-KA16"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 3,
+    "subset_seed": 10003,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-K002",
+      "paderborn-bearing-KA16",
+      "paderborn-bearing-KI14"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KA04"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI16"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "k_fault_groups": 0,
+    "train_group_ids": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KI16"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA15"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA15"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "k_fault_groups": 1,
+    "train_group_ids": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KI14"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KI16"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA15"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA15"
+    ]
+  },
+  {
+    "dataset": "Paderborn_Bearing_DataCenter",
+    "experiment": "Paderborn_E4_k_sweep",
+    "split_mode": "bearing_disjoint",
+    "condition_id": "N15_M07_F10",
+    "measurement_indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "split_seed": 4,
+    "subset_seed": 10004,
+    "k_fault_groups": 2,
+    "train_group_ids": [
+      "paderborn-bearing-K002",
+      "paderborn-bearing-K003",
+      "paderborn-bearing-KI04",
+      "paderborn-bearing-KI14"
+    ],
+    "val_group_ids": [
+      "paderborn-bearing-K001",
+      "paderborn-bearing-KI16"
+    ],
+    "test_group_ids": [
+      "paderborn-bearing-K004",
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA15"
+    ],
+    "test_source_types": [
+      "public_real"
+    ],
+    "test_fault_groups": [
+      "paderborn-bearing-KA04",
+      "paderborn-bearing-KA15"
+    ]
+  }
+]

@@ -1,0 +1,148 @@
+{
+  "train_vs_validation": {
+    "n_reference": 128,
+    "n_compared": 128,
+    "c2st_roc_auc": 0.99774169921875,
+    "c2st_accuracy": 0.984375,
+    "psd_js_divergence": 0.022956263717460297,
+    "psd_cosine_similarity": 0.9168978501809845,
+    "envelope_js_divergence": 0.008843493540275811,
+    "envelope_cosine_similarity": 0.9576866198672317,
+    "envelope_peak_drift_hz": 45.7763671875,
+    "feature_gaps": {
+      "rms": {
+        "reference_mean": 0.3348027763526749,
+        "compared_mean": 0.4812447286913718,
+        "reference_std": 0.13777576224801735,
+        "compared_std": 0.1289353785385534,
+        "standardized_gap": -0.9621737514319033,
+        "absolute_standardized_gap": 0.9621737514319033,
+        "reference_quantiles": [
+          0.1949283760125526,
+          0.2136684314424676,
+          0.4896150386981843
+        ],
+        "compared_quantiles": [
+          0.3411585176565192,
+          0.5221523669465546,
+          0.6236503898002608
+        ]
+      },
+      "kurtosis": {
+        "reference_mean": 4.906841624556472,
+        "compared_mean": 5.852479784465578,
+        "reference_std": 0.8869223121392575,
+        "compared_std": 2.0012700930272422,
+        "standardized_gap": -0.584282499129059,
+        "absolute_standardized_gap": 0.584282499129059,
+        "reference_quantiles": [
+          3.8843199378339994,
+          4.7565345402240435,
+          6.081181315564136
+        ],
+        "compared_quantiles": [
+          4.3676565551194,
+          5.421424457082164,
+          7.120117848607259
+        ]
+      },
+      "crest_factor": {
+        "reference_mean": 5.586915067247861,
+        "compared_mean": 6.055605232467938,
+        "reference_std": 0.6761403354506685,
+        "compared_std": 0.953092286532884,
+        "standardized_gap": -0.5456925501107732,
+        "absolute_standardized_gap": 0.5456925501107732,
+        "reference_quantiles": [
+          4.732881464628302,
+          5.542529336097314,
+          6.407501698613448
+        ],
+        "compared_quantiles": [
+          4.9432609221104595,
+          5.977707989212483,
+          7.188362543814439
+        ]
+      }
+    },
+    "nearest_neighbor": {
+      "median_ratio": 1.8346847914677142,
+      "generated_to_real_nn_median": 1.4357783973860774,
+      "real_loo_nn_median": 0.7825749709494492,
+      "exact_hash_overlap_count": 0
+    }
+  },
+  "matched_train_vs_train": {
+    "n_reference": 64,
+    "n_compared": 64,
+    "c2st_roc_auc": 0.508544921875,
+    "c2st_accuracy": 0.5234375,
+    "psd_js_divergence": 0.001324475543638474,
+    "psd_cosine_similarity": 0.9967464704887953,
+    "envelope_js_divergence": 0.0011297436891170402,
+    "envelope_cosine_similarity": 0.9960562523407834,
+    "envelope_peak_drift_hz": 69.3359375,
+    "feature_gaps": {
+      "rms": {
+        "reference_mean": 0.329904816557537,
+        "compared_mean": 0.3397007361478129,
+        "reference_std": 0.13662502488537828,
+        "compared_std": 0.13874416701542658,
+        "standardized_gap": -0.07110045649807854,
+        "absolute_standardized_gap": 0.07110045649807854,
+        "reference_quantiles": [
+          0.1959156685791496,
+          0.21311326058888583,
+          0.4834317364813542
+        ],
+        "compared_quantiles": [
+          0.19523834711842286,
+          0.3364833986487846,
+          0.49165434993572693
+        ]
+      },
+      "kurtosis": {
+        "reference_mean": 4.884736122456028,
+        "compared_mean": 4.928947126656917,
+        "reference_std": 0.9261079654745532,
+        "compared_std": 0.8453455538294689,
+        "standardized_gap": -0.049847662637105564,
+        "absolute_standardized_gap": 0.049847662637105564,
+        "reference_quantiles": [
+          3.781002065886943,
+          4.707880632094122,
+          6.059272237007205
+        ],
+        "compared_quantiles": [
+          3.9811894830529857,
+          4.790147362413663,
+          6.08142233246215
+        ]
+      },
+      "crest_factor": {
+        "reference_mean": 5.556354950476672,
+        "compared_mean": 5.61747518401905,
+        "reference_std": 0.7515636080727404,
+        "compared_std": 0.5895895250029737,
+        "standardized_gap": -0.09039578078351033,
+        "absolute_standardized_gap": 0.09039578078351033,
+        "reference_quantiles": [
+          4.720169702102324,
+          5.499860571097903,
+          6.38101750875003
+        ],
+        "compared_quantiles": [
+          4.807425282841833,
+          5.5944246457667415,
+          6.4470699728166165
+        ]
+      }
+    },
+    "nearest_neighbor": {
+      "median_ratio": 1.3003003378828981,
+      "generated_to_real_nn_median": 1.0586854085010298,
+      "real_loo_nn_median": 0.8141852906255818,
+      "exact_hash_overlap_count": 0
+    }
+  }
+}
